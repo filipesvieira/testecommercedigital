@@ -5,7 +5,7 @@ import CardContent from '@mui/material/CardContent';
 // import CardMedia from '@mui/material/CardMedia';
 import Typography from "@mui/material/Typography";
 import { useAppContext, localStorage } from './hooks';
-import Image from 'next/image';
+// import Image from 'next/image';
 
 let LocalStorage = new localStorage({});
 
@@ -14,7 +14,6 @@ interface Props {
 }
 
 export default function CardItem(props: Props) {
-	console.log("TCL: CardItem -> props", props)
 
     useEffect(() => {
         LocalStorage.getItemLocalStorage("walletAddress").then((value) => {
@@ -52,7 +51,7 @@ export default function CardItem(props: Props) {
                             backgroundColor: "red",
                         }}
                     >
-                        <Image
+                        <img
                             src="/images/cards/contemplative.jpg"
                             alt="My Image"
                             width={550}
