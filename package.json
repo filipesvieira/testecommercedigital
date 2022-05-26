@@ -33,7 +33,7 @@
     "web3-providers-http": "^1.6.1"
   },
   "devDependencies": {
-    "eslint": "8.0.1",
+    "eslint": "^8.0.1",
     "eslint-config-next": "11.1.2",
     "prisma": "^3.14.0"
   }
