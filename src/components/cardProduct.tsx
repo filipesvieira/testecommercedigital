@@ -13,7 +13,7 @@ interface Props {
     data: string
 }
 
-export default function CardItem(props: Props) {
+export default function CardProduct(props: Props) {
 
     useEffect(() => {
         LocalStorage.getItemLocalStorage("walletAddress").then((value) => {
@@ -60,7 +60,7 @@ export default function CardItem(props: Props) {
                     </div>
                     <CardContent>
                         <Typography align="center" gutterBottom variant="h5" component="div">
-                            TESTE2
+                            TESTE4
                         </Typography>
                         <Typography align="center" component="div" gutterBottom variant="body2" color="text.secondary">
                             Lizards are a widespread group of squamate reptiles, with over 6,000

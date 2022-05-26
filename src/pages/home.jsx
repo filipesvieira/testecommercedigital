@@ -9,7 +9,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
 import { makeStyles } from "@mui/styles";
-import { ButtonConnectWallet, CardItem } from "../components";
+import { ButtonConnectWallet, CardProduct } from "../components";
 import { Fauna } from '../../src/lib';
 const fauna = new Fauna();
 
@@ -32,7 +32,7 @@ export default function Home() {
                     </div>
                 </Toolbar>
             </AppBar>
-            <CardItem props={'TESTE'} />
+            <CardProduct props={'TESTE'} />
         </Box>
     );
 }
