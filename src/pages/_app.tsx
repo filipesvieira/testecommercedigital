@@ -4,9 +4,10 @@ import {
     // useThemeState,
     AppContext,
     useAppState
-} from '../components/hooks/';
+} from '../components/hooks';
+import type { AppProps } from 'next/app'
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
     const { stateApp, actionsApp } = useAppState();
 
     return (

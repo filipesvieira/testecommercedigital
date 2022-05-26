@@ -1,5 +1,7 @@
-import ButtonConnectWallet from "./button_connect_wallet";
+import ButtonConnectWallet from "./buttonConnectWallet";
+import CardItem from "./CardItem";
 
 export {
-    ButtonConnectWallet
+    ButtonConnectWallet,
+    CardItem,
 }
