@@ -13,8 +13,10 @@ export default async function get_all_users(req: NextApiRequest, res: NextApiRes
     if (req.method === 'GET') {
         try {
             users = await prisma.user.findMany();
+            console.dir(users, { depth: null })
             res.status(200).json(JSON.parse(JSON.stringify(users)));
         } catch (error) {
+            console.dir(error, { depth: null })
             res.status(404);
             res.end();
         }
