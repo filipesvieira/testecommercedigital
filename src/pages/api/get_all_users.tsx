@@ -2,8 +2,8 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import { PrismaClient } from "@prisma/client";
 
 interface User {
-    name: string,
-    email: string,
+    name?: string,
+    email?: string,
 };
 let users: Array<User> = [];
 
