@@ -8,7 +8,7 @@ interface ExtendedNextApiRequest extends NextApiRequest {
     };
 }
 
-export default async function createUser(req: ExtendedNextApiRequest, res: NextApiResponse) {
+export default async function create_user(req: ExtendedNextApiRequest, res: NextApiResponse) {
     let prisma: PrismaClient;
     prisma = new PrismaClient();
     if (req.method === 'POST') {
