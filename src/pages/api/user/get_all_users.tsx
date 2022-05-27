@@ -7,7 +7,7 @@ interface User {
 };
 let users: Array<User> = [];
 
-export default async function getAllUsers(req: NextApiRequest, res: NextApiResponse<User>) {
+export default async function get_all_users(req: NextApiRequest, res: NextApiResponse<User>) {
     let prisma: PrismaClient;
     prisma = new PrismaClient();
     if (req.method === 'GET') {

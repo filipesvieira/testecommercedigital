@@ -9,9 +9,7 @@ import { useAppContext, localStorage } from './hooks';
 
 let LocalStorage = new localStorage({});
 
-interface Props {
-    data: string
-}
+interface Props {};
 
 export default function CardProduct(props: Props) {
 
