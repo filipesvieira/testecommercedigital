@@ -11,6 +11,7 @@ export default async function get_all_users(req: NextApiRequest, res: NextApiRes
     let prisma: PrismaClient;
     prisma = new PrismaClient();
     if (req.method === 'GET') {
+        console.log('first')
         try {
             users = await prisma.user.findMany();
             console.dir(users, { depth: null })
