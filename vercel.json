@@ -1,0 +1,16 @@
+{
+    "routes": [
+        {
+            "src": "/",
+            "dest": "/api/user/get_all_users.tsx"
+        },
+        {
+            "src": "/get_all_users",
+            "methods": [
+                "POST",
+                "GET"
+            ],
+            "dest": "/api/user/get_all_users.tsx"
+        }
+    ]
+}
